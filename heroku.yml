@@ -1,0 +1,4 @@
+build:
+  docker:
+    rest1: rest1/Dockerfile
+    rest2: rest1/Dockerfile
