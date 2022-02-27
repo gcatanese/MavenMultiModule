@@ -6,4 +6,4 @@ workflows:
   maven_test:
     jobs:
       - maven/test:
-        command: '-X heroku-docker:deploy'
+        command: '-X verify'
