@@ -17,6 +17,10 @@ jobs:
       with:
         java-version: '11'
         cache: maven
+    - name: Heroku login
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: heroku login
     - name: Heroku Container Registry login
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
