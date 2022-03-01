@@ -2,8 +2,32 @@ version: 2.1
 
 orbs:
   maven: circleci/maven@1.2.0
-workflows:
-  maven_test:
-    jobs:
+
+jobs:
+  install_heroku:
+    steps:
+      - run:
+          sudo curl https://cli-assets.heroku.com/install.sh | sh
+
+  run_maven:
+    steps:
       - maven/test:
           command: '-X heroku-docker:deploy'
+
+workflows:
+  run_all:
+    jobs:
+      - install_heroku
+      - run_maven
+
+
+        #workflows:
+#  deploy_to_heroku:
+#    jobs:
+#      - run:
+#          curl https://cli-assets.heroku.com/install.sh | sh
+#      - maven/test:
+#          command: '-X heroku-docker:deploy'
+#  heroku_setup:
+#    jobs:
+#      - heroku/install
