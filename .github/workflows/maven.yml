@@ -22,6 +22,6 @@ jobs:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
       run: heroku container:login
     - name: Build with Maven
-      run: mvn -B heroku-docker:deploy
+      run: mvn -B heroku-docker:info
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
