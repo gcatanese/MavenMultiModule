@@ -54,10 +54,10 @@
         <groupId>com.tweesky.cloudtools</groupId>
         <artifactId>heroku-docker-maven-plugin</artifactId>
         <configuration>
-          <appName>downstreamservice</appName>
-          <processType>web</processType>
+          <appName>downstreamservice2</appName>
+          <processType>worker</processType>
           <configVars>
-            <MY_VAR>SomeValue</MY_VAR>
+            <ANOTHER_VAR>AnotherValue</ANOTHER_VAR>
           </configVars>
         </configuration>
       </plugin>
