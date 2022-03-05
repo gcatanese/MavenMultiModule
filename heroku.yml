@@ -1,6 +1,6 @@
 setup:
   config:
-    MY_VAR: SomeValue
+    MY_VARIABLE: SomeValue
 build:
   docker:
     web: rest1/Dockerfile
