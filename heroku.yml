@@ -1,4 +1,7 @@
+setup:
+  config:
+    MY_VAR: SomeValue
 build:
   docker:
-    rest1: rest1/Dockerfile
-    rest2: rest1/Dockerfile
+    web: rest1/Dockerfile
+    worker: rest2/Dockerfile
