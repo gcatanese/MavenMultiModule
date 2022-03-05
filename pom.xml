@@ -52,7 +52,7 @@
             <plugin>
                 <groupId>com.tweesky.cloudtools</groupId>
                 <artifactId>heroku-docker-maven-plugin</artifactId>
-                <version>0.0.1</version>
+                <version>0.0.2-SNAPSHOT</version>
             </plugin>
         </plugins>
     </build>
