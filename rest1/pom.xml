@@ -64,7 +64,6 @@
       <plugin>
         <groupId>com.tweesky.cloudtools</groupId>
         <artifactId>heroku-docker-maven-plugin</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
         <configuration>
           <appName>downstreamservice</appName>
           <processType>web</processType>
